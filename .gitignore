@@ -1,0 +1,28 @@
+# XAMPP / Local Development
+/tmp/
+*.log
+
+# Database
+*.sql
+!database.sql
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Specific
+assets/denim
+assets/vintage
+node_modules/
+dist/
+.env
+
+# PHP Specific
+composer.lock
+vendor/
