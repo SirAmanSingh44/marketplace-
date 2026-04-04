@@ -46,7 +46,7 @@ require_once 'db.php';
                         <li class="nav-item"><a class="nav-link text-warning" href="admin/dashboard.php">Admin Panel</a></li>
                     <?php endif; ?>
                     <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-                    <li class="nav-item"><span class="nav-link fw-bold text-primary">Hi, <?php echo htmlspecialchars($_SESSION['user_name']); ?></span></li>
+                    <li class="nav-item"><span class="nav-link fw-bold text-primary">Hi, <?php echo htmlspecialchars($_SESSION['user_name'] ?? 'User'); ?></span></li>
                 <?php else: ?>
                     <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
                     <li class="nav-item"><a class="btn btn-primary" href="register.php">Join Now</a></li>
